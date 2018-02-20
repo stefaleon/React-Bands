@@ -66,3 +66,10 @@ Inside that directory, you can run several commands:
 ## 06 Navbar
 
 * Add a Navbar component.
+
+
+
+&nbsp;
+## 07 BandList
+
+* Add a BandList component and render it in App. Add more bands via defaultProps.
