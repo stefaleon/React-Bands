@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
@@ -25,4 +25,31 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+} */
+
+
+.band-card {
+  width: 31%;
+  min-width: 230px;
+  font-size: .8em;
+  padding-top: .4em;
+  background-color: #fee;
+  -webkit-box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+  -moz-box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+  box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+}
+
+.band-image {
+  width: 100%;
+  height: auto;
+  min-width: 230px;
+}
+
+.band-members {
+  margin: .5em;
+}
+
+.band-story {
+  padding: 1em;
+  font-size: .9em;
 }

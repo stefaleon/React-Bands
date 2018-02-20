@@ -4,14 +4,17 @@ class Band extends Component {
   render() {
     const { name, image, story } = this.props;
     const members = this.props.members.map((member, index) => (
-      <li key={index}>{member}</li>
+      <span key={index}> &#9642;{member} </span>
     ));
     return (
-      <div>
-        <div>{name}</div>
-        <img src={image} alt={name} />
-        <ul>{members}</ul>
-        <p>{story}</p>
+      <div className="band-card">
+        <h2>{name}</h2>
+        <img className="band-image" src={image} alt={name} />
+        <div className="band-members">
+          <span><strong>Members: </strong></span>
+          <span>{members}</span>
+        </div>
+        <p className="band-story">{story}</p>
       </div>
     );
   }

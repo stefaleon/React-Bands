@@ -47,3 +47,9 @@ Inside that directory, you can run several commands:
 ## 03 More props
 
 * Pass image and story.
+
+
+&nbsp;
+## 04 Style
+
+* Edit the card style and add the 'Lato' font. 
