@@ -42,3 +42,8 @@ Inside that directory, you can run several commands:
 ## 02 Pass props
 
 * Pass the band name and members as props from App to Band.
+
+&nbsp;
+## 03 More props
+
+* Pass image and story.
