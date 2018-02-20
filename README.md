@@ -59,3 +59,10 @@ Inside that directory, you can run several commands:
 ## 05 MemberList and Default Props
 
 * Move members to a separate component and use defaultProps.
+
+
+
+&nbsp;
+## 06 Navbar
+
+* Add a Navbar component.

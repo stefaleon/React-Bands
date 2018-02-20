@@ -32,6 +32,7 @@
   width: 31%;
   min-width: 230px;
   font-size: .8em;
+  margin: .3em;
   padding-top: .4em;
   background-color: #fee;
   -webkit-box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
