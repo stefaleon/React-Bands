@@ -31,3 +31,8 @@ Inside that directory, you can run several commands:
     Removes this tool and copies build dependencies, configuration files
     and scripts into the app directory. If you do this, you can’t go back!
 ```
+
+&nbsp;
+## 01 Add the Band component
+
+* Create *Band.js*, import and display it in *App*.
