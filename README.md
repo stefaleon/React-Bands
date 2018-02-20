@@ -52,4 +52,10 @@ Inside that directory, you can run several commands:
 &nbsp;
 ## 04 Style
 
-* Edit the card style and add the 'Lato' font. 
+* Edit the card style and add the 'Lato' font.
+
+
+&nbsp;
+## 05 MemberList and Default Props
+
+* Move members to a separate component and use defaultProps.
