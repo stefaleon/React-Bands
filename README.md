@@ -36,3 +36,9 @@ Inside that directory, you can run several commands:
 ## 01 Add the Band component
 
 * Create *Band.js*, import and display it in *App*.
+
+
+&nbsp;
+## 02 Pass props
+
+* Pass the band name and members as props from App to Band.
