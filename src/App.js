@@ -31,10 +31,13 @@ class App extends Component {
           image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Bad_Religion_2004-5-7.jpg/500px-Bad_Religion_2004-5-7.jpg"
         }
       ],
-      nextBandId: 4
+      nextBandId: 4,
+      showForm: false
     };
 
     this.handleSave = this.handleSave.bind(this);
+    this.displayForm = this.displayForm.bind(this);
+    this.hideForm = this.hideForm.bind(this);
   }
 
   handleSave(band) {
@@ -42,17 +45,27 @@ class App extends Component {
       const newBand = {...band, id: this.state.nextBandId};
       return {
         nextBandId: prevState.nextBandId + 1,
-        bands: [...prevState.bands, newBand] 
+        bands: [...prevState.bands, newBand],
+        showForm: false
       }
     });
   }
 
+  displayForm() {
+    this.setState({ showForm: true });
+  }
+
+  hideForm() {
+    this.setState({ showForm: false });
+  }
+
 
   render() {
+    const { showForm } = this.state;
     return (
       <div className="App">
-        <Navbar />
-        <BandForm onSave={this.handleSave} />
+        <Navbar onNewBand={this.displayForm} />
+        { showForm ? <BandForm onSave={this.handleSave} onClose={this.hideForm} /> : null }
         <BandList bands={this.state.bands} />
       </div>
     );

@@ -119,3 +119,11 @@ Also add the nextBandId state component.
 ## 13 handleSave
 
 * Configure the save handler that is passed to the BandForm as the onSave prop's value. Adds the new band to the bands array and increases the nextBandId by one.
+
+
+&nbsp;
+## 14 Show and hide BandForm
+
+* Set the showForm piece of state in App and render the BandForm conditionally.
+* Pass callbacks to the Navbar (onNewBand) and to the BandForm (onClose).
+* Update showForm to false in handleSave so that the form closes on save.

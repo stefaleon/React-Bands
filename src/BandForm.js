@@ -3,7 +3,8 @@ import './BandForm.css';
 
 class BandForm extends Component {
   static defaultProps = {
-    onSave() {}
+    onSave() {},
+    onClose() {}
   }
 
   constructor(props) {
@@ -30,8 +31,6 @@ class BandForm extends Component {
       image: ""
     });
   }
-
-  handleClose() {}
 
   handleNewMember(e) {
     const {members} = this.state;
@@ -77,7 +76,7 @@ class BandForm extends Component {
           <button
             type="button"
             className="close-form-button"
-            onclick={this.handleClose}
+            onClick={this.props.onClose}
           >
             &#215;
           </button>
@@ -134,7 +133,6 @@ class BandForm extends Component {
           <button
             type="submit"
             className="form-submit-button"
-            onclick={this.handleClose}
           >
             Add Band
           </button>
