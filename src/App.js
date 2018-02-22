@@ -38,7 +38,9 @@ class App extends Component {
     this.handleSave = this.handleSave.bind(this);
     this.displayForm = this.displayForm.bind(this);
     this.hideForm = this.hideForm.bind(this);
+    this.removeBand = this.removeBand.bind(this);
   }
+
 
   handleSave(band) {
     this.setState((prevState, props) => {
@@ -59,6 +61,10 @@ class App extends Component {
     this.setState({ showForm: false });
   }
 
+  removeBand(id) {    
+    const bands = this.state.bands.filter(band => band.id !== id);
+    this.setState({bands});
+  }
 
   render() {
     const { showForm } = this.state;
@@ -66,7 +72,7 @@ class App extends Component {
       <div className="App">
         <Navbar onNewBand={this.displayForm} />
         { showForm ? <BandForm onSave={this.handleSave} onClose={this.hideForm} /> : null }
-        <BandList bands={this.state.bands} />
+        <BandList bands={this.state.bands} onDelete={this.removeBand} />
       </div>
     );
   }

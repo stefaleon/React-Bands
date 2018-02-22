@@ -127,3 +127,10 @@ Also add the nextBandId state component.
 * Set the showForm piece of state in App and render the BandForm conditionally.
 * Pass callbacks to the Navbar (onNewBand) and to the BandForm (onClose).
 * Update showForm to false in handleSave so that the form closes on save.
+
+
+&nbsp;
+## 15 Delete Bands
+
+* Pass the onDelete method prop from App to Band through BandList.
+* Call it as a callback on button click with the id prop so that the id of the band to be deleted becomes available to removeBand.
