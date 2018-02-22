@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './BandForm.css';
 
 class BandForm extends Component {
+  static defaultProps = {
+    onSave() {}
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -13,9 +17,20 @@ class BandForm extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleNewMember = this.handleNewMember.bind(this);
     this.handleMemberChange = this.handleMemberChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit() {}
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.onSave({...this.state});
+    this.setState({
+      name: "",
+      members: [ "" ],
+      story: "",
+      image: ""
+    });
+  }
+
   handleClose() {}
 
   handleNewMember(e) {

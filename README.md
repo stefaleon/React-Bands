@@ -103,3 +103,12 @@ Also add the nextBandId state component.
 ## 11 Member handlers
 
 * Configure handleNewMember and handleMemberChange.
+
+
+
+&nbsp;
+## 12 handleSubmit
+
+* The App passes a callback function to the BandForm as a prop. This callback will update the state in App. On submit the form simply will call this callback (onSave) and a copy of all the values in the form's state will be passed to it.
+
+* handleSubmit also clears the form data.
