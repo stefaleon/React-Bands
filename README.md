@@ -80,4 +80,11 @@ Inside that directory, you can run several commands:
 &nbsp;
 ## 08 State
 
-* Add the constructor and copy the initial state bands data from the defaultProps. Now the sample data is passed to BandList as props from the initial state. 
+* Add the constructor and copy the initial state bands data from the defaultProps. Now the sample data is passed to BandList as props from the initial state.
+
+
+&nbsp;
+## 09 IDs
+
+* Add an id property to each band and use it as key in the map function instead of the array index which may be changing, for example when we delete a band.
+Also add the nextBandId state component.
