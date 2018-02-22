@@ -94,6 +94,12 @@ Also add the nextBandId state component.
 &nbsp;
 ## 10 BandForm
 
-* Add the BandForm component. It contains a close button, an input for the name, mapped inputs for the members, a textarea for the story and an input for the image url.
+* Add the BandForm component. It contains a close button, an input for the name,an input for the image url, mapped inputs for the members, a button for adding members, a textarea for the story and the submit button.
 
 * Configure the general handleChange event, instead of configuring multiple handlers for various inputs, using event.target.name as key.
+
+
+&nbsp;
+## 11 Member handlers
+
+* Configure handleNewMember and handleMemberChange.

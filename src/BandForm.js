@@ -11,14 +11,28 @@ class BandForm extends Component {
       image: ""
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleNewMember = this.handleNewMember.bind(this);
+    this.handleMemberChange = this.handleMemberChange.bind(this);
   }
 
   handleSubmit() {}
   handleClose() {}
-  handleNewMember() {}
+
+  handleNewMember(e) {
+    const {members} = this.state;
+    this.setState({ members: [...members, ''] });
+  }
 
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
+  }
+
+  handleMemberChange(e) {
+    const index = Number(e.target.name.split('-')[1]);
+    const members = this.state.members.map((m, i) => (
+      i === index ? e.target.value : m
+    ));
+    this.setState({members});
   }
 
   render() {
@@ -35,7 +49,7 @@ class BandForm extends Component {
             size={30}
             autoComplete="off"
             placeholder="member"
-            onChange={() => {}}
+            onChange={this.handleMemberChange}
           />
       </div>
     ));
@@ -46,6 +60,7 @@ class BandForm extends Component {
       <div className="band-form-container">
         <form className="band-form" onSubmit={this.handleSubmit}>
           <button
+            type="button"
             className="close-form-button"
             onclick={this.handleClose}
           >
@@ -79,8 +94,9 @@ class BandForm extends Component {
           </div>
           {memberinputs}
           <button
+            type="button"
             className="add-member-button"
-            onclick={this.handleNewMember}
+            onClick={this.handleNewMember}
           >
             +
           </button>
