@@ -73,3 +73,11 @@ Inside that directory, you can run several commands:
 ## 07 BandList
 
 * Add a BandList component and render it in App. Add more bands via defaultProps.
+
+
+
+
+&nbsp;
+## 08 State
+
+* Add the constructor and copy the initial state bands data from the defaultProps. Now the sample data is passed to BandList as props from the initial state. 
