@@ -112,3 +112,10 @@ Also add the nextBandId state component.
 * The App passes a callback function to the BandForm as a prop. This callback will update the state in App. On submit the form simply will call this callback (onSave) and a copy of all the values in the form's state will be passed to it.
 
 * handleSubmit also clears the form data.
+
+
+
+&nbsp;
+## 13 handleSave
+
+* Configure the save handler that is passed to the BandForm as the onSave prop's value. Adds the new band to the bands array and increases the nextBandId by one.

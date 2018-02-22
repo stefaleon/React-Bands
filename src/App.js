@@ -33,12 +33,26 @@ class App extends Component {
       ],
       nextBandId: 4
     };
+
+    this.handleSave = this.handleSave.bind(this);
   }
+
+  handleSave(band) {
+    this.setState((prevState, props) => {
+      const newBand = {...band, id: this.state.nextBandId};
+      return {
+        nextBandId: prevState.nextBandId + 1,
+        bands: [...prevState.bands, newBand] 
+      }
+    });
+  }
+
+
   render() {
     return (
       <div className="App">
         <Navbar />
-        <BandForm />
+        <BandForm onSave={this.handleSave} />
         <BandList bands={this.state.bands} />
       </div>
     );
