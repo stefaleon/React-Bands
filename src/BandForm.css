@@ -1,0 +1,57 @@
+.band-form-container {
+  margin: 1em auto;
+  padding: .6em;
+  min-height: 15em;
+  max-width: 25.4em;
+  background-color: #fefefe;
+  -webkit-box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+  -moz-box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+  box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+}
+
+.band-form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-end;
+}
+
+.band-form-name {
+}
+
+.band-form-story {
+}
+
+.close-form-button {
+  font-size: 1.3em;
+  padding: .1em;
+  line-height: .6em;
+  border-radius: 3px;
+  margin-bottom: .4em;
+}
+
+.add-member-button {
+  font-size: 1.5em;
+  padding: .1em;
+  line-height: .7em;
+  border-radius: 3px;
+  margin-bottom: .4em;
+}
+
+.form-submit-button {
+  align-self: center;
+  margin: .9em;
+  border-radius: 3px;
+  font-size: .9em;
+}
+
+input, textarea {
+  margin: .3em .3em 0 1em;
+  margin-left: 1em;
+  padding: .3em;
+  border-radius: 3px;
+}
+
+button {
+  cursor: pointer;
+}

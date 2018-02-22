@@ -88,3 +88,12 @@ Inside that directory, you can run several commands:
 
 * Add an id property to each band and use it as key in the map function instead of the array index which may be changing, for example when we delete a band.
 Also add the nextBandId state component.
+
+
+
+&nbsp;
+## 10 BandForm
+
+* Add the BandForm component. It contains a close button, an input for the name, mapped inputs for the members, a textarea for the story and an input for the image url.
+
+* Configure the general handleChange event, instead of configuring multiple handlers for various inputs, using event.target.name as key.

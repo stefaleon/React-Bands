@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #efefef
 }
 
 /* .App-logo {
@@ -34,10 +35,14 @@
   font-size: .8em;
   margin: .3em;
   padding-top: .4em;
-  background-color: #fee;
+  background-color: #fefefe;
   -webkit-box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
   -moz-box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
   box-shadow: 9px 9px 9px -6px rgba(0,0,0,0.69);
+}
+
+.band-card h2 {
+  color: red;
 }
 
 .band-image {

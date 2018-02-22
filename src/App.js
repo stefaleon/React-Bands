@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import BandList from './BandList';
+import BandForm from './BandForm';
 import './App.css';
 
 class App extends Component {
@@ -37,6 +38,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
+        <BandForm />
         <BandList bands={this.state.bands} />
       </div>
     );
