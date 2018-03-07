@@ -134,3 +134,45 @@ Also add the nextBandId state component.
 
 * Pass the onDelete method prop from App to Band through BandList.
 * Call it as a callback on button click with the id prop so that the id of the band to be deleted becomes available to removeBand.
+
+
+
+&nbsp;
+## 15 Deploy to Github Pages
+
+* Step 1: Add homepage to package.json
+
+Open package.json and add a homepage field for the project:
+
+```
+  "homepage": " https://stefaleon.github.io/React-Bands/",
+```
+Create React App uses the homepage field to determine the root URL in the built HTML file.
+
+* Step 2: Install gh-pages and add deploy to scripts in package.json
+
+```
+$ npm install --save gh-pages
+```
+Add the following scripts in package.json:
+
+```
+  "scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+```
+The predeploy script will run automatically before deploy is run.
+
+* Step 3: Deploy the site by running npm run deploy
+
+```
+$ npm run deploy
+```
+
+* Step 4: Ensure your project’s settings use gh-pages
+
+**Finally, make sure GitHub Pages option in your GitHub project settings is set to use the gh-pages branch**
+
+* Step 5: Commit and Push
